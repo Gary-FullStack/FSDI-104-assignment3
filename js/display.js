@@ -9,7 +9,8 @@ function displayPetCards() {
         // create the template string
         card += `
             <div class = "petCard">
-            
+            <h4>Owner: ${pet.Oname}</h4>
+            <h4>Email: ${pet.Email}</h4>
             <h4>Name: ${pet.name}</h4>
             <p> Age: ${pet.age}</p>
             <p> Type: ${pet.type}</p>
@@ -29,7 +30,7 @@ function displayPetCards() {
 
 
 
-function displayInfo() {
+// function displayInfo() {
 
-    document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
-}
+//     document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
+// }

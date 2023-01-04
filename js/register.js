@@ -23,7 +23,10 @@ let PetsRus = {
 }
 
 
-function Pet(name, age, type, gender, breed, temperament, service) {
+function Pet(ownerName, ownerEmail, name, age, type, gender, breed, temperament, service) {
+
+    this.ownerName = ownerName;
+    this.ownerEmail = ownerEmail;
     this.name = name;
     this.age = age;
     this.type = type;
@@ -34,6 +37,8 @@ function Pet(name, age, type, gender, breed, temperament, service) {
 
 }
 
+let inputOname = document.getElementById('txtOname');
+let inputEmail = document.getElementById('txtEmail');
 let inputName = document.getElementById('txtName');
 let inputAge = document.getElementById('txtAge');
 let inputType = document.getElementById('txtType');
@@ -44,9 +49,9 @@ let inputService = document.getElementById('txtService');
 
 // register pet to the HTML form
 function register() {
-    console.log(inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
+    console.log(inputOname.value, inputEmail.value, inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
 
-    let newPet = new Pet(inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
+    let newPet = new Pet(inputOname.value, inputEmail.value, inputName.value, inputAge.value, inputType.value, inputGender.value, inputBreed.value, inputTemperament.value, inputService.value);
 
     PetsRus.pets.push(newPet);
     // alert("you have " + PetsRus.pets.length + " pets registered.");
@@ -57,6 +62,8 @@ function register() {
     clearForm();
 }
 function clearForm() {
+    inputOname.value = "";
+    inputEmail.value = "";
     inputName.value = "";
     inputAge.value = "";
     inputType.value = "";
@@ -69,14 +76,14 @@ function clearForm() {
 
 function displayInfo() {
 
-    document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
+    //     document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
 }
 
 
 function init() {
-    let Jake = new Pet('Jake', '13', 'dog', 'male', 'lab', 'calm', 'nails');
-    let Ivy = new Pet('Ivy', '3', 'dog', 'female', 'mix', 'hyper', 'grooming');
-    let Penny = new Pet('Penny', '10', 'dog', 'female', 'Australian Cattle', 'loving', 'check-up');
+    let Jake = new Pet('Bob', 'Bob@css.com', 'Jake', '13', 'dog', 'male', 'lab', 'calm', 'nails');
+    let Ivy = new Pet('Bob', 'Bob@css.com', 'Ivy', '3', 'dog', 'female', 'mix', 'hyper', 'grooming');
+    let Penny = new Pet('Bob', 'Bob@css.com', 'Penny', '10', 'dog', 'female', 'Australian Cattle', 'loving', 'check-up');
     PetsRus.pets.push(Jake, Ivy, Penny);
 
     displayInfo();

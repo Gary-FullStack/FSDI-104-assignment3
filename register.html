@@ -25,6 +25,17 @@
       <p class="text-end" id="info">.</p>
       <h3 class="text-center">Register a new pet.</h3>
       <div class="mb-3">
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text">Owner name</span>
+          <input type="text" class="form-control" id="txtOname" />
+        </div>
+
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text">Email</span>
+          <input type="text" class="form-control" id="txtEmail" />
+        </div>
+
+        <hr class="border border-primary border-3 opacity-75 mb-5" />
         <label class="form-label">Name:</label>
         <input type="text" class="form-control" id="txtName" />
       </div>
@@ -60,13 +71,13 @@
 
       <hr />
 
-      <button class="btn btn-primary" onclick="hideAll()">Hide All</button>
+      <!-- <button class="btn btn-primary" onclick="hideAll()">Hide All</button> -->
     </div>
 
     <div id="pets"></div>
 
     <script src="/js/display.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/register.js"></script>
 
     <!-- <script src="/js/practice.js"></script> -->
   </body>
