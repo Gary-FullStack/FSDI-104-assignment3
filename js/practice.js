@@ -19,12 +19,12 @@
 // console.log(p);
 
 
-// create a button , when th euser clicks on it .. hide all the inputs 
+// create a button , when th euser clicks on it .. hide all the inputs
 
-function hideAll() {
-    document.querySelector(".container").style.display = "none";
+// function hideAll() {
+//     document.querySelector(".container").style.display = "none";
 
-}
+// }
 
 // let element = document.getElementById("")
 // for (let i = 0; i < elements.length; i++) {

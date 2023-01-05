@@ -12,6 +12,7 @@
     <title>Register</title>
   </head>
   <body>
+    <!-- my header with logo -->
     <h1 class="title">Pets R Us!</h1>
     <header>
       <img class="logo" src="img/pet-logo.jpg" width="100" height="100" />
@@ -20,7 +21,9 @@
       <a class="nav-link" href="register.html">Register</a>
       <a class="nav-link" href="featured.html">Featured Pets</a>
     </header>
+    <!-- / header -->
 
+    <!-- registration form -->
     <div class="container mb-3 row">
       <p class="text-end" id="info">.</p>
       <h3 class="text-center">Register a new pet.</h3>
@@ -70,13 +73,19 @@
       <button class="btn btn-primary" onclick="register()">Register</button>
 
       <hr />
-
-      <!-- <button class="btn btn-primary" onclick="hideAll()">Hide All</button> -->
     </div>
+    <!-- / form -->
 
+    <!-- js  card injection -->
     <div id="pets"></div>
+    <!-- / card stuff -->
 
     <hr class="border border-primary border-3 opacity-75 mb-5" />
+
+    <!-- table -->
+
+    <!-- I tried, no-go though.  
+        I could probably figure it out if i had a few days of trial and error though -->
 
     <table class="petTable">
       <thead>
@@ -93,31 +102,21 @@
       </thead>
       <tbody>
         <tr>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-        </tr>
-        <tr>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
+          <td id="td1">test</td>
+          <td id="td2">test</td>
+          <td id="td3">test</td>
+          <td id="td4">test</td>
+          <td id="td5">test</td>
+          <td id="td6">test</td>
+          <td id="td7">test</td>
+          <td id="td8">test</td>
         </tr>
       </tbody>
     </table>
 
+    <!--  /table -->
+
     <script src="/js/display.js"></script>
     <script src="/js/register.js"></script>
-
-    <!-- <script src="/js/practice.js"></script> -->
   </body>
 </html>

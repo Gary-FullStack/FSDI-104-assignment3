@@ -1,12 +1,12 @@
 function displayPetCards() {
 
-    // select the section by id
+
     let petSection = document.getElementById("pets");
     let card = "";
-    // travel the array
+
     for (let i = 0; i < PetsRus.pets.length; i++) {
         let pet = PetsRus.pets[i];
-        // create the template string
+
         card += `
             <div class = "petCard">
             <h4>Owner: ${pet.Oname}</h4>
@@ -21,16 +21,57 @@ function displayPetCards() {
             </div>`;
 
         console.log(card);
-        // 
-
     }
-    //    insert template into the petsection
+
     petSection.innerHTML = card;
 }
 
 
 
-// function displayInfo() {
 
-//     document.getElementById("info").innerHTML = "you have " + PetsRus.pets.length + " pets registered.";
-// }
+//   I tried the pet table fuction.not sure how to go here..
+
+
+let petSection = document.getElementById("pets");
+let table = "";
+
+function displayTable() {
+    for (let i = 0; i < PetsRus.pets.length; i++) {
+        let pet = PetsRus.pets[i];
+
+        table += `
+            <td>Owner: ${pet.Oname}</td>
+          <td>Email: ${pet.Email}</td>
+          <td>Name:${pet.name}</td>
+          <td>Age: ${pet.age}</td>
+          <td>Type: ${pet.type}</td>
+          <td>Gender: ${pet.gender}</td>
+          <td>Temperament: ${pet.temperament}</td>
+          <td>Service: ${pet.service}</td>`
+    }
+
+}
+
+
+/* I tried the pet table fuction.not sure how to go here..
+
+
+let petSection = document.getElementById("pets");
+let table = "";
+
+function displayTable() {
+  for (let i = 0; i < PetsRus.pets.length; i++) {
+      let pet = PetsRus.pets[i];
+
+      table += `
+          <td>Owner: ${pet.Oname}</td>
+        <td>Email: ${pet.Email}</td>
+        <td>Name:${pet.name}</td>
+        <td>Age: ${pet.age}</td>
+        <td>Type: ${pet.type}</td>
+        <td>Gender: ${pet.gender}</td>
+        <td>Temperament: ${pet.temperament}</td>
+        <td>Service: ${pet.service}</td>`
+  }
+
+}
