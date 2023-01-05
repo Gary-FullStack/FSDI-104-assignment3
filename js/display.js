@@ -1,6 +1,6 @@
 function displayPetCards() {
 
-    // select thr section by id
+    // select the section by id
     let petSection = document.getElementById("pets");
     let card = "";
     // travel the array

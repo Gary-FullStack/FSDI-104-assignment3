@@ -41,3 +41,16 @@ header {
   border: 1px solid black;
   padding: 10px;
 }
+
+thead {
+  color: green;
+}
+tbody {
+  color: blue;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
