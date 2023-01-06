@@ -29,28 +29,7 @@ function displayPetCards() {
 
 
 
-//   I tried the pet table fuction.not sure how to go here..
 
-
-let petSection = document.getElementById("pets");
-let table = "";
-
-function displayTable() {
-    for (let i = 0; i < PetsRus.pets.length; i++) {
-        let pet = PetsRus.pets[i];
-
-        table += `
-            <td>Owner: ${pet.Oname}</td>
-          <td>Email: ${pet.Email}</td>
-          <td>Name:${pet.name}</td>
-          <td>Age: ${pet.age}</td>
-          <td>Type: ${pet.type}</td>
-          <td>Gender: ${pet.gender}</td>
-          <td>Temperament: ${pet.temperament}</td>
-          <td>Service: ${pet.service}</td>`
-    }
-
-}
 
 
 /* I tried the pet table fuction.not sure how to go here..
